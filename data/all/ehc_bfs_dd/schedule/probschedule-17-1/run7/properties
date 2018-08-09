@@ -1,0 +1,1 @@
+{"plan length": "22", "domain": "schedule", "reopened": "0", "plan cost": "22", "dead ends": "555", "generated": "51750", "cost": "22", "coverage": 1, "evaluations": "33100", "nickname": "EHC_BFS_DD", "search time": "3.27134", "expansions": "32544", "evaluated": "33100", "problem": "probschedule-17-1.pddl"}

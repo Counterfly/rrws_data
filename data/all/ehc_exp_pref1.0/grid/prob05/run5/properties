@@ -1,0 +1,1 @@
+{"plan length": "4325", "domain": "grid", "reopened": "0", "plan cost": "4325", "dead ends": "0", "generated": "23869", "cost": "4325", "coverage": 1, "evaluations": "10556", "nickname": "EHC_EXP_PREF1.0", "search time": "3.60861", "expansions": "47480", "evaluated": "23854", "problem": "prob05.pddl"}
