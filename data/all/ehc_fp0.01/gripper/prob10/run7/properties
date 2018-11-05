@@ -1,1 +1,1 @@
-{"plan length": "25379119", "domain": "gripper", "reopened": "0", "plan cost": "25379119", "dead ends": "0", "generated": "25379772", "cost": "25379119", "coverage": 1, "evaluations": "18290905", "nickname": "EHC_FP0.01", "search time": "251.487", "expansions": "50758235", "evaluated": "25379749", "problem": "prob10.pddl"}
+{"plan length": 0, "domain": "gripper", "reopened": 0, "plan cost": 0, "dead ends": 0, "generated": 0, "cost": 0, "coverage": 0, "evaluations": 0, "nickname": "EHC_FP0.01", "search time": 0, "expansions": 0, "evaluated": 0, "problem": "prob10.pddl"}

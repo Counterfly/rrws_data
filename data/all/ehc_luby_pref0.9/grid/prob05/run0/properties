@@ -1,1 +1,1 @@
-{"plan length": "3031", "domain": "grid", "reopened": "0", "plan cost": "3031", "dead ends": "0", "generated": "74221", "cost": "3031", "coverage": 1, "evaluations": "17505", "nickname": "EHC_LUBY_PREF0.9", "search time": "5.79691", "expansions": "148151", "evaluated": "74202", "problem": "prob05.pddl"}
+{"plan length": 0, "domain": "grid", "reopened": 0, "plan cost": 0, "dead ends": 0, "generated": 0, "cost": 0, "coverage": 0, "evaluations": 0, "nickname": "EHC_LUBY_PREF0.9", "search time": 0, "expansions": 0, "evaluated": 0, "problem": "prob05.pddl"}

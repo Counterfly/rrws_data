@@ -1,1 +1,1 @@
-{"plan length": "316", "domain": "grid", "reopened": "0", "plan cost": "316", "dead ends": "0", "generated": "345", "cost": "316", "coverage": 1, "evaluations": "175", "nickname": "EHC_FP0.1", "search time": "0.00888388", "expansions": "628", "evaluated": "341", "problem": "prob01.pddl"}
+{"plan length": 0, "domain": "grid", "reopened": 0, "plan cost": 0, "dead ends": 0, "generated": 0, "cost": 0, "coverage": 0, "evaluations": 0, "nickname": "EHC_FP0.1", "search time": 0, "expansions": 0, "evaluated": 0, "problem": "prob01.pddl"}

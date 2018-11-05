@@ -1,1 +1,1 @@
-{"plan length": "119", "domain": "gripper", "reopened": "0", "plan cost": "119", "dead ends": "0", "generated": "1552", "cost": "119", "coverage": 1, "evaluations": "1416", "nickname": "EHC_LUBY_PREF1.0", "search time": "0.0272433", "expansions": "349", "evaluated": "1500", "problem": "prob18.pddl"}
+{"plan length": 0, "domain": "gripper", "reopened": 0, "plan cost": 0, "dead ends": 0, "generated": 0, "cost": 0, "coverage": 0, "evaluations": 0, "nickname": "EHC_LUBY_PREF1.0", "search time": 0, "expansions": 0, "evaluated": 0, "problem": "prob18.pddl"}
