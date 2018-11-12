@@ -1,0 +1,1 @@
+{"plan length": "38", "domain": "grid", "reopened": "0", "plan cost": "38", "dead ends": "0", "generated": "93", "cost": "38", "coverage": 1, "evaluations": "62", "nickname": "EHC_BFS_DD_PREF_PRUNE", "search time": "0.0052508", "expansions": "61", "evaluated": "62", "problem": "prob02.pddl"}
