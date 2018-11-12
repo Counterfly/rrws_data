@@ -1,0 +1,1 @@
+{"plan length": "109", "domain": "gripper", "reopened": "0", "plan cost": "109", "dead ends": "0", "generated": "8166", "cost": "109", "coverage": 1, "evaluations": "5900", "nickname": "EHC_BFS_DD", "search time": "0.118369", "expansions": "5899", "evaluated": "5900", "problem": "prob17.pddl"}
