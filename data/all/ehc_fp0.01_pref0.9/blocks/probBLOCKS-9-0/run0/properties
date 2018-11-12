@@ -1,1 +1,0 @@
-{"plan length": "5648", "domain": "blocks", "reopened": "0", "plan cost": "5648", "dead ends": "0", "generated": "5688", "cost": "5648", "coverage": 1, "evaluations": "3087", "nickname": "EHC_FP0.01_PREF0.9", "search time": "0.0830831", "expansions": "11305", "evaluated": "5689", "problem": "probBLOCKS-9-0.pddl"}

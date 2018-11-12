@@ -1,1 +1,0 @@
-{"plan length": 0, "domain": "schedule", "reopened": "0", "plan cost": 0, "dead ends": "14", "generated": "178", "cost": 0, "coverage": 0, "evaluations": "179", "nickname": "EHC_BFS_DD_PREF_PRUNE", "search time": "0.018185", "expansions": "165", "evaluated": "179", "problem": "probschedule-26-2.pddl"}

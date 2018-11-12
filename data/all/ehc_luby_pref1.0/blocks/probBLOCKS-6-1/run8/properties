@@ -1,1 +1,0 @@
-{"plan length": "46", "domain": "blocks", "reopened": "0", "plan cost": "46", "dead ends": "0", "generated": "445", "cost": "46", "coverage": 1, "evaluations": "89", "nickname": "EHC_LUBY_PREF1.0", "search time": "0.00154552", "expansions": "855", "evaluated": "442", "problem": "probBLOCKS-6-1.pddl"}
