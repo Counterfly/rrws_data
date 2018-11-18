@@ -1,0 +1,170 @@
+nickname: EHC_BFS_DD
+params = --search-time-limit 10m --search-memory-limit 2G /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-16-1.pddl --search ehc(h=ff())
+INFO     Running translator.
+INFO     translator input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-16-1.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python2.7 /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/translate/translate.py /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-16-1.pddl
+Parsing...
+Parsing: [0.010s CPU, 0.003s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.003s wall-clock]
+Preparing model... [0.000s CPU, 0.002s wall-clock]
+Generated 21 rules.
+Computing model... [0.040s CPU, 0.036s wall-clock]
+882 relevant atoms
+592 auxiliary atoms
+1474 final queue length
+2533 total queue pushes
+Completing instantiation... [0.030s CPU, 0.034s wall-clock]
+Instantiating: [0.070s CPU, 0.076s wall-clock]
+Computing fact groups...
+Finding invariants...
+10 initial candidates
+Finding invariants: [0.010s CPU, 0.007s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.002s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+17 uncovered facts
+Choosing groups: [0.010s CPU, 0.002s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.020s CPU, 0.015s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.002s wall-clock]
+Translating task: [0.040s CPU, 0.044s wall-clock]
+752 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+32 propositions removed
+Detecting unreachable propositions: [0.020s CPU, 0.023s wall-clock]
+Translator variables: 33
+Translator derived variables: 0
+Translator facts: 306
+Translator goal facts: 15
+Translator mutex groups: 33
+Translator total mutex groups size: 561
+Translator operators: 512
+Translator axioms: 0
+Translator task size: 4707
+Translator peak memory: 33028 KB
+Writing output... [0.020s CPU, 0.080s wall-clock]
+Done! [0.180s CPU, 0.245s wall-clock]
+INFO     Running preprocessor (release32).
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time limit: None
+INFO     preprocessor memory limit: None
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/preprocess < output.sas
+Building causal graph...
+The causal graph is not acyclic.
+33 variables of 33 necessary
+17 of 33 mutex groups necessary.
+512 of 512 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 306
+Preprocessor derived variables: 0
+Preprocessor task size: 4435
+Writing output...
+done
+INFO     Running search (release32).
+INFO     search input: output
+INFO     search arguments: ['--search', 'ehc(h=ff())']
+INFO     search time limit: 600s
+INFO     search memory limit: 2048 MB
+INFO     search executable: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward
+('calling component', '/ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward', ['--search', 'ehc(h=ff())', '--internal-plan-file', 'sas_plan'])
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward --search 'ehc(h=ff())' --internal-plan-file sas_plan < output
+time limit 600.00 -> (600, 601)
+reading input... [t=0.00011752s]
+Simplifying transitions... done!
+done reading input! [t=0.016487s]
+packing state variables...done! [t=0.0165162s]
+Variables: 33
+Facts: 306
+Bytes per state: 16
+Building successor generator...done! [t=0.0180691s]
+done initalizing global data [t=0.0180777s]
+
+====
+Use-Pref = 0
+====
+Pruning by preferred ops, use_preferred = 0
+Conducting enforced hill-climbing search, (real) bound = 2147483647
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 2016 unary operators... done! [1536 unary operators]
+Initial heuristic value for h = ff: 31
+initialize g_value = -1
+initialize g_value = -1node.g = 0
+New best heuristic value for h = ff: 31
+New best heuristic value for h = ff: 30
+New best heuristic value for h = ff: 29
+New best heuristic value for h = ff: 28
+New best heuristic value for h = ff: 27
+New best heuristic value for h = ff: 26
+New best heuristic value for h = ff: 25
+New best heuristic value for h = ff: 24
+New best heuristic value for h = ff: 23
+New best heuristic value for h = ff: 22
+New best heuristic value for h = ff: 21
+New best heuristic value for h = ff: 19
+New best heuristic value for h = ff: 18
+New best heuristic value for h = ff: 17
+New best heuristic value for h = ff: 16
+New best heuristic value for h = ff: 14
+New best heuristic value for h = ff: 12
+New best heuristic value for h = ff: 11
+New best heuristic value for h = ff: 9
+New best heuristic value for h = ff: 8
+New best heuristic value for h = ff: 6
+New best heuristic value for h = ff: 5
+New best heuristic value for h = ff: 3
+New best heuristic value for h = ff: 2
+New best heuristic value for h = ff: 1
+New best heuristic value for h = ff: 0
+Solution found!
+tracing path..
+#5783324 <- #5783323 <- #5783322 <- #5783319 <- #5783317 <- #5783316 <- #5783315 <- #5783313 <- #5783312 <- #5762862 <- #5754246 <- #5750444 <- #5748683 <- #5747983 <- #5747689 <- #5747565 <- #5747513 <- #5747494 <- #5747485 <- #5747482 <- #5747480 <- #5747479 <- #5747478 <- #5747476 <- #5747475 <- #5747471 <- #5747469 <- #5747467 <- #5747466 <- #5747465 <- #5747464 <- #5011250 <- #4765086 <- #4664134 <- #4631343 <- #4618455 <- #4614192 <- #4612431 <- #4611867 <- #4611642 <- #4611566 <- #4611533 <- #4611522 <- #4611518 <- #4611516 <- #4611510 <- #4611508 <- #4611507 <- #4611506 <- #1646769 <- #552903 <- #205777 <- #80391 <- #41392 <- #27592 <- #23369 <- #21893 <- #21448 <- #21298 <- #21254 <- #21241 <- #21238 <- #21237 <- #21224 <- #21221 <- #21213 <- #21211 <- #21207 <- #21206 <- #21201 <- #21200 <- #21186 <- #21183 <- #21173 <- #21171 <- #21153 <- #21149 <- #21138 <- #21136 <- #18666 <- #17745 <- #17361 <- #17233 <- #17187 <- #17173 <- #17168 <- #17166 <- #8037 <- #3680 <- #1968 <- #1111 <- #774 <- #602 <- #535 <- #501 <- #488 <- #481 <- #479 <- #478 <- #185 <- #71 <- #35 <- #22 <- #19 <- #18 <- #7 <- #4 <- #1 <- #0 <- Actual search time: 249.247s [t=249.268s]
+Plan length: 108 step(s).
+Plan cost: 108
+No Solution Found.
+Expanded 5783324 state(s).
+Reopened 0 state(s).
+Evaluated 5783325 state(s).
+Evaluations: 5783325
+Generated 11416817 state(s).
+Dead ends: 0 state(s).
+EHC phases: 25
+Average expansions per EHC phase: 231333
+EHC phases of depth 1: 2 - Avg. Expansions: 1
+EHC phases of depth 2: 15 - Avg. Expansions: 9.13333
+EHC phases of depth 4: 2 - Avg. Expansions: 8
+EHC phases of depth 6: 1 - Avg. Expansions: 460
+EHC phases of depth 8: 1 - Avg. Expansions: 3970
+EHC phases of depth 12: 1 - Avg. Expansions: 16688
+EHC phases of depth 14: 3 - Avg. Expansions: 1.92068e+06
+Search time: 249.25s
+Total time: 249.268s
+Solution found.
+Peak memory: 516592 KB
+INFO     Running validate.
+INFO     validate input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-16-1.pddl', 'sas_plan']
+INFO     validate arguments: []
+INFO     validate time limit: None
+INFO     validate memory limit: None

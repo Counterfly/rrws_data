@@ -1,0 +1,140 @@
+nickname: EHC_BFS_DD_PREF_PRUNE
+params = --search-time-limit 10m --search-memory-limit 2G /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-6-2.pddl --heuristic hff=ff() --search ehc(hff, preferred=[hff], preferred_usage=PRUNE_BY_PREFERRED)
+INFO     Running translator.
+INFO     translator input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-6-2.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python2.7 /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/translate/translate.py /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-6-2.pddl
+Parsing...
+Parsing: [0.000s CPU, 0.002s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 21 rules.
+Computing model... [0.000s CPU, 0.004s wall-clock]
+152 relevant atoms
+102 auxiliary atoms
+254 final queue length
+411 total queue pushes
+Completing instantiation... [0.010s CPU, 0.005s wall-clock]
+Instantiating: [0.010s CPU, 0.012s wall-clock]
+Computing fact groups...
+Finding invariants...
+10 initial candidates
+Finding invariants: [0.000s CPU, 0.007s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.000s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+7 uncovered facts
+Choosing groups: [0.000s CPU, 0.000s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.008s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.000s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.000s wall-clock]
+Translating task: [0.000s CPU, 0.007s wall-clock]
+102 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+12 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.003s wall-clock]
+Translator variables: 13
+Translator derived variables: 0
+Translator facts: 56
+Translator goal facts: 5
+Translator mutex groups: 13
+Translator total mutex groups size: 91
+Translator operators: 72
+Translator axioms: 0
+Translator task size: 687
+Translator peak memory: 29036 KB
+Writing output... [0.000s CPU, 0.137s wall-clock]
+Done! [0.030s CPU, 0.171s wall-clock]
+INFO     Running preprocessor (release32).
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time limit: None
+INFO     preprocessor memory limit: None
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/preprocess < output.sas
+Building causal graph...
+The causal graph is not acyclic.
+13 variables of 13 necessary
+7 of 13 mutex groups necessary.
+72 of 72 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 56
+Preprocessor derived variables: 0
+Preprocessor task size: 645
+Writing output...
+done
+INFO     Running search (release32).
+INFO     search input: output
+INFO     search arguments: ['--heuristic', 'hff=ff()', '--search', 'ehc(hff, preferred=[hff], preferred_usage=PRUNE_BY_PREFERRED)']
+INFO     search time limit: 600s
+INFO     search memory limit: 2048 MB
+INFO     search executable: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward
+('calling component', '/ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward', ['--heuristic', 'hff=ff()', '--search', 'ehc(hff, preferred=[hff], preferred_usage=PRUNE_BY_PREFERRED)', '--internal-plan-file', 'sas_plan'])
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward --heuristic 'hff=ff()' --search 'ehc(hff, preferred=[hff], preferred_usage=PRUNE_BY_PREFERRED)' --internal-plan-file sas_plan < output
+time limit 600.00 -> (600, 601)
+reading input... [t=9.9147e-05s]
+Simplifying transitions... done!
+done reading input! [t=0.00246892s]
+packing state variables...done! [t=0.00248047s]
+Variables: 13
+Facts: 56
+Bytes per state: 4
+Building successor generator...done! [t=0.00263108s]
+done initalizing global data [t=0.00263562s]
+
+====
+Use-Pref = 1
+====
+Pruning by preferred ops, use_preferred = 1
+Conducting enforced hill-climbing search, (real) bound = 2147483647
+Using preferred operators for pruning
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 276 unary operators... done! [216 unary operators]
+Initial heuristic value for ff: 11
+initialize g_value = -1
+initialize g_value = -1node.g = 0
+New best heuristic value for ff: 11
+New best heuristic value for ff: 10
+New best heuristic value for ff: 9
+No solution - FAILED
+Actual search time: 8.5327e-05s [t=0.00345844s]
+No Solution Found.
+Expanded 8 state(s).
+Reopened 0 state(s).
+Evaluated 8 state(s).
+Evaluations: 8
+Generated 10 state(s).
+Dead ends: 0 state(s).
+EHC phases: 2
+Average expansions per EHC phase: 4
+EHC phases of depth 2: 1 - Avg. Expansions: 3
+EHC phases of depth 4: 1 - Avg. Expansions: 4
+Search time: 0.000511112s
+Total time: 0.00346245s
+Search stopped without finding a solution.
+Peak memory: 5644 KB
+INFO     Running validate.
+INFO     validate input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-6-2.pddl']
+INFO     validate arguments: []
+INFO     validate time limit: None
+INFO     validate memory limit: None

@@ -1,0 +1,158 @@
+nickname: EHC_BFS_DD
+params = --search-time-limit 10m --search-memory-limit 2G /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-10-0.pddl --search ehc(h=ff())
+INFO     Running translator.
+INFO     translator input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-10-0.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python2.7 /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/translate/translate.py /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-10-0.pddl
+Parsing...
+Parsing: [0.010s CPU, 0.004s wall-clock]
+Normalizing task... [0.000s CPU, 0.001s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.001s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.003s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 21 rules.
+Computing model... [0.020s CPU, 0.016s wall-clock]
+372 relevant atoms
+250 auxiliary atoms
+622 final queue length
+1044 total queue pushes
+Completing instantiation... [0.020s CPU, 0.023s wall-clock]
+Instantiating: [0.040s CPU, 0.043s wall-clock]
+Computing fact groups...
+Finding invariants...
+10 initial candidates
+Finding invariants: [0.010s CPU, 0.011s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+11 uncovered facts
+Choosing groups: [0.010s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.020s CPU, 0.017s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.000s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.000s CPU, 0.001s wall-clock]
+Translating task: [0.020s CPU, 0.028s wall-clock]
+290 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+20 propositions removed
+Detecting unreachable propositions: [0.020s CPU, 0.014s wall-clock]
+Translator variables: 21
+Translator derived variables: 0
+Translator facts: 132
+Translator goal facts: 9
+Translator mutex groups: 21
+Translator total mutex groups size: 231
+Translator operators: 200
+Translator axioms: 0
+Translator task size: 1863
+Translator peak memory: 29940 KB
+Writing output... [0.000s CPU, 0.385s wall-clock]
+Done! [0.110s CPU, 0.496s wall-clock]
+INFO     Running preprocessor (release32).
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time limit: None
+INFO     preprocessor memory limit: None
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/preprocess < output.sas
+Building causal graph...
+The causal graph is not acyclic.
+21 variables of 21 necessary
+11 of 21 mutex groups necessary.
+200 of 200 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 132
+Preprocessor derived variables: 0
+Preprocessor task size: 1753
+Writing output...
+done
+INFO     Running search (release32).
+INFO     search input: output
+INFO     search arguments: ['--search', 'ehc(h=ff())']
+INFO     search time limit: 600s
+INFO     search memory limit: 2048 MB
+INFO     search executable: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward
+('calling component', '/ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward', ['--search', 'ehc(h=ff())', '--internal-plan-file', 'sas_plan'])
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward --search 'ehc(h=ff())' --internal-plan-file sas_plan < output
+time limit 600.00 -> (600, 601)
+reading input... [t=0.000142265s]
+Simplifying transitions... done!
+done reading input! [t=0.0110406s]
+packing state variables...done! [t=0.0110608s]
+Variables: 21
+Facts: 132
+Bytes per state: 8
+Building successor generator...done! [t=0.0118425s]
+done initalizing global data [t=0.0118506s]
+
+====
+Use-Pref = 0
+====
+Pruning by preferred ops, use_preferred = 0
+Conducting enforced hill-climbing search, (real) bound = 2147483647
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 780 unary operators... done! [600 unary operators]
+Initial heuristic value for h = ff: 18
+initialize g_value = -1
+initialize g_value = -1node.g = 0
+New best heuristic value for h = ff: 18
+New best heuristic value for h = ff: 17
+New best heuristic value for h = ff: 16
+New best heuristic value for h = ff: 15
+New best heuristic value for h = ff: 14
+New best heuristic value for h = ff: 13
+New best heuristic value for h = ff: 11
+New best heuristic value for h = ff: 10
+New best heuristic value for h = ff: 8
+New best heuristic value for h = ff: 7
+New best heuristic value for h = ff: 5
+New best heuristic value for h = ff: 4
+New best heuristic value for h = ff: 3
+New best heuristic value for h = ff: 2
+New best heuristic value for h = ff: 1
+New best heuristic value for h = ff: 0
+Solution found!
+tracing path..
+#6326 <- #6325 <- #6324 <- #6322 <- #6319 <- #6318 <- #6317 <- #3152 <- #1800 <- #1221 <- #972 <- #866 <- #819 <- #799 <- #790 <- #786 <- #784 <- #782 <- #781 <- #777 <- #775 <- #772 <- #771 <- #756 <- #748 <- #745 <- #743 <- #742 <- #741 <- #739 <- #738 <- #704 <- #692 <- #688 <- #686 <- #678 <- #676 <- #267 <- #124 <- #82 <- #69 <- #66 <- #65 <- #57 <- #55 <- #30 <- #20 <- #16 <- #14 <- #13 <- #12 <- #8 <- #6 <- #5 <- #4 <- #2 <- #0 <- Actual search time: 0.198874s [t=0.212918s]
+Plan length: 56 step(s).
+Plan cost: 56
+No Solution Found.
+Expanded 6326 state(s).
+Reopened 0 state(s).
+Evaluated 6327 state(s).
+Evaluations: 6327
+Generated 11044 state(s).
+Dead ends: 0 state(s).
+EHC phases: 15
+Average expansions per EHC phase: 421.733
+EHC phases of depth 1: 2 - Avg. Expansions: 1
+EHC phases of depth 2: 6 - Avg. Expansions: 6.16667
+EHC phases of depth 4: 3 - Avg. Expansions: 22.3333
+EHC phases of depth 6: 3 - Avg. Expansions: 228
+EHC phases of depth 12: 1 - Avg. Expansions: 5536
+Search time: 0.200623s
+Total time: 0.212925s
+Solution found.
+Peak memory: 6188 KB
+INFO     Running validate.
+INFO     validate input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-10-0.pddl']
+INFO     validate arguments: []
+INFO     validate time limit: None
+INFO     validate memory limit: None
