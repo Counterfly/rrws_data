@@ -1,0 +1,1 @@
+{"plan length": "76", "domain": "rovers", "reopened": "0", "plan cost": "76", "dead ends": "0", "generated": "1107834", "cost": "76", "coverage": 1, "evaluations": "328187", "nickname": "EHC_BFS_DD", "search time": "49.8892", "expansions": "328186", "evaluated": "328187", "problem": "p28.pddl"}
