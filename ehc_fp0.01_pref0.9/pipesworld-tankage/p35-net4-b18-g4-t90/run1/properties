@@ -1,0 +1,1 @@
+{"plan length": "1473", "domain": "pipesworld-tankage", "reopened": "0", "plan cost": "1473", "dead ends": "0", "generated": "1702", "cost": "1473", "coverage": 1, "evaluations": "1661", "nickname": "EHC_FP0.01_PREF0.9", "search time": "4.58503", "expansions": "2942", "evaluated": "1703", "problem": "p35-net4-b18-g4-t90.pddl"}
