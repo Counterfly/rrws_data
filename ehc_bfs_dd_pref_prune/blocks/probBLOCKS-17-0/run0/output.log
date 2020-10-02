@@ -1,0 +1,175 @@
+nickname: EHC_BFS_DD_PREF_PRUNE
+params = --search-time-limit 10m --search-memory-limit 2G /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-17-0.pddl --heuristic hff=ff() --search ehc(hff, preferred=[hff], preferred_usage=PRUNE_BY_PREFERRED)
+INFO     Running translator.
+INFO     translator input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-17-0.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python2.7 /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/translate/translate.py /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-17-0.pddl
+Parsing...
+Parsing: [0.000s CPU, 0.002s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.000s CPU, 0.002s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 21 rules.
+Computing model... [0.030s CPU, 0.025s wall-clock]
+988 relevant atoms
+663 auxiliary atoms
+1651 final queue length
+2846 total queue pushes
+Completing instantiation... [0.040s CPU, 0.039s wall-clock]
+Instantiating: [0.070s CPU, 0.068s wall-clock]
+Computing fact groups...
+Finding invariants...
+10 initial candidates
+Finding invariants: [0.000s CPU, 0.007s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.000s wall-clock]
+Instantiating groups... [0.010s CPU, 0.002s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.001s wall-clock]
+Choosing groups...
+18 uncovered facts
+Choosing groups: [0.000s CPU, 0.002s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.016s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.001s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.002s wall-clock]
+Translating task: [0.050s CPU, 0.050s wall-clock]
+850 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+34 propositions removed
+Detecting unreachable propositions: [0.030s CPU, 0.025s wall-clock]
+Translator variables: 35
+Translator derived variables: 0
+Translator facts: 342
+Translator goal facts: 16
+Translator mutex groups: 35
+Translator total mutex groups size: 630
+Translator operators: 578
+Translator axioms: 0
+Translator task size: 5307
+Translator peak memory: 33552 KB
+Writing output... [0.010s CPU, 0.070s wall-clock]
+Done! [0.170s CPU, 0.238s wall-clock]
+INFO     Running preprocessor (release32).
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time limit: None
+INFO     preprocessor memory limit: None
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/preprocess < output.sas
+Building causal graph...
+The causal graph is not acyclic.
+35 variables of 35 necessary
+18 of 35 mutex groups necessary.
+578 of 578 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 342
+Preprocessor derived variables: 0
+Preprocessor task size: 5001
+Writing output...
+done
+INFO     Running search (release32).
+INFO     search input: output
+INFO     search arguments: ['--heuristic', 'hff=ff()', '--search', 'ehc(hff, preferred=[hff], preferred_usage=PRUNE_BY_PREFERRED)']
+INFO     search time limit: 600s
+INFO     search memory limit: 2048 MB
+INFO     search executable: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward
+('calling component', '/ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward', ['--heuristic', 'hff=ff()', '--search', 'ehc(hff, preferred=[hff], preferred_usage=PRUNE_BY_PREFERRED)', '--internal-plan-file', 'sas_plan'])
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward --heuristic 'hff=ff()' --search 'ehc(hff, preferred=[hff], preferred_usage=PRUNE_BY_PREFERRED)' --internal-plan-file sas_plan < output
+time limit 600.00 -> (600, 601)
+reading input... [t=9.7114e-05s]
+Simplifying transitions... done!
+done reading input! [t=0.0269499s]
+packing state variables...done! [t=0.0269667s]
+Variables: 35
+Facts: 342
+Bytes per state: 16
+Building successor generator...done! [t=0.0287656s]
+done initalizing global data [t=0.0287743s]
+
+====
+Use-Pref = 1
+====
+Pruning by preferred ops, use_preferred = 1
+Conducting enforced hill-climbing search, (real) bound = 2147483647
+Using preferred operators for pruning
+Initializing FF heuristic...
+Initializing additive heuristic...
+Simplifying 2278 unary operators... done! [1734 unary operators]
+Initial heuristic value for ff: 33
+initialize g_value = -1
+initialize g_value = -1node.g = 0
+New best heuristic value for ff: 33
+New best heuristic value for ff: 32
+New best heuristic value for ff: 31
+New best heuristic value for ff: 30
+New best heuristic value for ff: 29
+New best heuristic value for ff: 28
+New best heuristic value for ff: 27
+New best heuristic value for ff: 25
+New best heuristic value for ff: 24
+New best heuristic value for ff: 23
+New best heuristic value for ff: 22
+New best heuristic value for ff: 21
+New best heuristic value for ff: 20
+New best heuristic value for ff: 19
+New best heuristic value for ff: 18
+New best heuristic value for ff: 17
+New best heuristic value for ff: 16
+New best heuristic value for ff: 15
+New best heuristic value for ff: 14
+New best heuristic value for ff: 13
+New best heuristic value for ff: 12
+New best heuristic value for ff: 11
+New best heuristic value for ff: 9
+New best heuristic value for ff: 8
+New best heuristic value for ff: 7
+New best heuristic value for ff: 6
+New best heuristic value for ff: 4
+New best heuristic value for ff: 2
+New best heuristic value for ff: 1
+New best heuristic value for ff: 0
+Solution found!
+tracing path..
+#2194 <- #2193 <- #2192 <- #2189 <- #2187 <- #2185 <- #2184 <- #2183 <- #2182 <- #2181 <- #2180 <- #2179 <- #2178 <- #2175 <- #2173 <- #2159 <- #2142 <- #2131 <- #2124 <- #2119 <- #2117 <- #2115 <- #2114 <- #2113 <- #2112 <- #2109 <- #2108 <- #2077 <- #2051 <- #2035 <- #2025 <- #2019 <- #2015 <- #2013 <- #2012 <- #2008 <- #2007 <- #1959 <- #1918 <- #1891 <- #1875 <- #1863 <- #1857 <- #1852 <- #1849 <- #1847 <- #1846 <- #1759 <- #1737 <- #1697 <- #1687 <- #1673 <- #1669 <- #1663 <- #1661 <- #1659 <- #1658 <- #1655 <- #1653 <- #1400 <- #1253 <- #1135 <- #1082 <- #1025 <- #1004 <- #980 <- #973 <- #962 <- #959 <- #954 <- #952 <- #950 <- #949 <- #946 <- #943 <- #938 <- #934 <- #733 <- #638 <- #546 <- #511 <- #484 <- #475 <- #463 <- #460 <- #457 <- #456 <- #352 <- #326 <- #299 <- #292 <- #281 <- #277 <- #274 <- #273 <- #253 <- #212 <- #204 <- #189 <- #186 <- #182 <- #177 <- #175 <- #170 <- #166 <- #162 <- #157 <- #127 <- #115 <- #110 <- #107 <- #90 <- #79 <- #75 <- #73 <- #68 <- #64 <- #58 <- #56 <- #51 <- #50 <- #45 <- #44 <- #37 <- #36 <- #18 <- #7 <- #3 <- #0 <- Actual search time: 0.0922623s [t=0.124537s]
+Plan length: 128 step(s).
+Plan cost: 128
+No Solution Found.
+Expanded 2194 state(s).
+Reopened 0 state(s).
+Evaluated 2195 state(s).
+Evaluations: 2195
+Generated 4043 state(s).
+Dead ends: 0 state(s).
+EHC phases: 29
+Average expansions per EHC phase: 75.6552
+EHC phases of depth 1: 2 - Avg. Expansions: 1
+EHC phases of depth 2: 15 - Avg. Expansions: 6.53333
+EHC phases of depth 4: 3 - Avg. Expansions: 40
+EHC phases of depth 6: 1 - Avg. Expansions: 91
+EHC phases of depth 8: 3 - Avg. Expansions: 97
+EHC phases of depth 10: 4 - Avg. Expansions: 222
+EHC phases of depth 14: 1 - Avg. Expansions: 704
+Search time: 0.0954468s
+Total time: 0.124541s
+Solution found.
+Peak memory: 6544 KB
+INFO     Running validate.
+INFO     validate input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-17-0.pddl', 'sas_plan']
+INFO     validate arguments: []
+INFO     validate time limit: None
+INFO     validate memory limit: None

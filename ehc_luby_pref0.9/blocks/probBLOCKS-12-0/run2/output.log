@@ -1,0 +1,98 @@
+nickname: EHC_LUBY_PREF0.9
+params = --search-time-limit 10m --search-memory-limit 2G /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-12-0.pddl --heuristic hff=ff() --search ehc_rw(h=hff, restart=luby, preferred=[hff], pref_prob=0.9)
+INFO     Running translator.
+INFO     translator input: ['/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl', '/ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-12-0.pddl']
+INFO     translator arguments: []
+INFO     translator time limit: None
+INFO     translator memory limit: None
+INFO     callstring: /usr/bin/python2.7 /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/translate/translate.py /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/domain.pddl /ais/krcomp13/loyzer/fd/rrws_fd/benchmarks/blocks/probBLOCKS-12-0.pddl
+Parsing...
+Parsing: [0.000s CPU, 0.002s wall-clock]
+Normalizing task... [0.000s CPU, 0.000s wall-clock]
+Instantiating...
+Generating Datalog program... [0.000s CPU, 0.000s wall-clock]
+Normalizing Datalog program...
+Normalizing Datalog program: [0.010s CPU, 0.002s wall-clock]
+Preparing model... [0.000s CPU, 0.001s wall-clock]
+Generated 21 rules.
+Computing model... [0.010s CPU, 0.013s wall-clock]
+518 relevant atoms
+348 auxiliary atoms
+866 final queue length
+1469 total queue pushes
+Completing instantiation... [0.020s CPU, 0.020s wall-clock]
+Instantiating: [0.040s CPU, 0.037s wall-clock]
+Computing fact groups...
+Finding invariants...
+10 initial candidates
+Finding invariants: [0.010s CPU, 0.007s wall-clock]
+Checking invariant weight... [0.000s CPU, 0.001s wall-clock]
+Instantiating groups... [0.000s CPU, 0.001s wall-clock]
+Collecting mutex groups... [0.000s CPU, 0.000s wall-clock]
+Choosing groups...
+13 uncovered facts
+Choosing groups: [0.000s CPU, 0.001s wall-clock]
+Building translation key... [0.000s CPU, 0.000s wall-clock]
+Computing fact groups: [0.010s CPU, 0.013s wall-clock]
+Building STRIPS to SAS dictionary... [0.000s CPU, 0.000s wall-clock]
+Building dictionary for full mutex groups... [0.000s CPU, 0.001s wall-clock]
+Building mutex information...
+Building mutex information: [0.000s CPU, 0.001s wall-clock]
+Translating task...
+Processing axioms...
+Simplifying axioms... [0.000s CPU, 0.000s wall-clock]
+Processing axioms: [0.010s CPU, 0.001s wall-clock]
+Translating task: [0.030s CPU, 0.024s wall-clock]
+420 effect conditions simplified
+0 implied preconditions added
+Detecting unreachable propositions...
+0 operators removed
+0 axioms removed
+24 propositions removed
+Detecting unreachable propositions: [0.010s CPU, 0.013s wall-clock]
+Translator variables: 25
+Translator derived variables: 0
+Translator facts: 182
+Translator goal facts: 11
+Translator mutex groups: 25
+Translator total mutex groups size: 325
+Translator operators: 288
+Translator axioms: 0
+Translator task size: 2667
+Translator peak memory: 30844 KB
+Writing output... [0.010s CPU, 0.139s wall-clock]
+Done! [0.100s CPU, 0.231s wall-clock]
+INFO     Running preprocessor (release32).
+INFO     preprocessor input: output.sas
+INFO     preprocessor arguments: []
+INFO     preprocessor time limit: None
+INFO     preprocessor memory limit: None
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/preprocess < output.sas
+Building causal graph...
+The causal graph is not acyclic.
+25 variables of 25 necessary
+13 of 25 mutex groups necessary.
+288 of 288 operators necessary.
+0 of 0 axiom rules necessary.
+Building domain transition graphs...
+solveable in poly time 0
+Building successor generator...
+Preprocessor facts: 182
+Preprocessor derived variables: 0
+Preprocessor task size: 2511
+Writing output...
+done
+INFO     Running search (release32).
+INFO     search input: output
+INFO     search arguments: ['--heuristic', 'hff=ff()', '--search', 'ehc_rw(h=hff, restart=luby, preferred=[hff], pref_prob=0.9)']
+INFO     search time limit: 600s
+INFO     search memory limit: 2048 MB
+INFO     search executable: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward
+('calling component', '/ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward', ['--heuristic', 'hff=ff()', '--search', 'ehc_rw(h=hff, restart=luby, preferred=[hff], pref_prob=0.9)', '--internal-plan-file', 'sas_plan'])
+INFO     callstring: /ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward --heuristic 'hff=ff()' --search 'ehc_rw(h=hff, restart=luby, preferred=[hff], pref_prob=0.9)' --internal-plan-file sas_plan < output
+time limit 600.00 -> (600, 601)
+reading input... [t=6.6047e-05s]
+Failed to match magic word 'end_operator'.
+Got ''.
+Peak memory: 5512 KB
+Command '['/ais/krcomp13/loyzer/fd/rrws_fd/builds/release32/bin/downward', '--heuristic', 'hff=ff()', '--search', 'ehc_rw(h=hff, restart=luby, preferred=[hff], pref_prob=0.9)', '--internal-plan-file', 'sas_plan']' returned non-zero exit status 2
